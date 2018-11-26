@@ -1,0 +1,32 @@
+@font-face {
+    font-family: apple_pinghei_bold;
+    src: url("../fonts/Ping_Hei_Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: apple_SF_Pro_Display;
+    src: url("../fonts/SF_Pro_Display_Bold.otf") format("opentype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: apple_SF_Pro_Display;
+    src: url("../fonts/SF_Pro_Display_Light.otf") format("opentype");
+}
+
+* {
+    font-family: apple_SF_Pro_Display;
+}
+
+body {
+    background-color: #80deea;
+}
+.nav-button{
+    background-color:transparent;
+    border:none;
+    color: white;
+}
+div.navbar-header>strong{
+    line-height: 100%;
+    text-align: center;
+}
