@@ -21,12 +21,19 @@
 body {
     background-color: #80deea;
 }
-.nav-button{
-    background-color:transparent;
-    border:none;
+
+.nav-button {
+    background-color: transparent;
+    border: none;
     color: white;
 }
-div.navbar-header>strong{
+
+div.navbar-header > strong {
     line-height: 100%;
     text-align: center;
+}
+@media(min-width: 768px) {
+    .menuList{
+        width: 98%;
+    }
 }

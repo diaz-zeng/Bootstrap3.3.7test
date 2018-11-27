@@ -11,10 +11,10 @@
     <script type="text/javascript" src="js/bootstrap.js"></script>
 </head>
 <body>
-<div class="container-fluid" style="margin: 0;padding: 0;">
+<div class="container-fluid" style="padding: 0;">
     <nav class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
-            <div class="navbar-header">
+            <div class="navbar-header navbar-left">
                 <button type="button" class="navbar-toggle" data-toggle="collapse"
                         data-target="#example-navbar-collapse">
                     <span class="sr-only"></span>
@@ -22,13 +22,48 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" style="padding: 0" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
-                        <path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 6c3.31 0 6 2.69 6 6 0 3.32-2.69 6-6 6s-6-2.68-6-6c0-3.31 2.69-6 6-6zm0 28.4c-5.01 0-9.41-2.56-12-6.44.05-3.97 8.01-6.16 12-6.16s11.94 2.19 12 6.16c-2.59 3.88-6.99 6.44-12 6.44z"></path>
-                    </svg>
+
+                <a class="navbar-brand" style="padding: 0;" href="#">
+                    <!--<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">-->
+                    <!--<path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 6c3.31 0 6 2.69 6 6 0 3.32-2.69 6-6 6s-6-2.68-6-6c0-3.31 2.69-6 6-6zm0 28.4c-5.01 0-9.41-2.56-12-6.44.05-3.97 8.01-6.16 12-6.16s11.94 2.19 12 6.16c-2.59 3.88-6.99 6.44-12 6.44z"></path>-->
+                    <!--</svg>-->
+                    <img src="icon/ic_account_circle_black_48dp.png" alt="User Photo" id="userPhoto" width="48px"
+                         height="48px" style="border: 0 solid; border-radius:24px">
                 </a>
+
             </div>
-            <div class="collapse navbar-collapse" id="example-navbar-collapse"></div>
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                <ul class="nav navbar-nav menuList">
+                    <li><a href="#"><strong class="h4">首页</strong></a></li>
+                    <li><a href="#"><strong class="h4">个人资料</strong></a></li>
+                    <li><a href="#"><strong class="h4">订单管理</strong></a>
+                    <li><a href="#"><strong class="h4">支付方式</strong></a></li>
+                    <li><a href="#"><strong class="h4">账户安全</strong></a></li>
+                    <li><a href="#"><strong class="h4">收货地址管理</strong></a></li>
+                    <li class="col-md-offset-3">
+                        <div>
+                            <form action="#" class="navbar-form" style="padding: 0;margin: 0;">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="search" placeholder="查询商品条码">
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-default navbar-btn col-xs-12">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                        查询
+                                    </button>
+                                </div>
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-default navbar-btn col-xs-12">
+                                        <span class="glyphicon glyphicon-barcode"></span>
+                                        扫一扫
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </nav>
 </div>
